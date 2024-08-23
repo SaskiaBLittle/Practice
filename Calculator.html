@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Practice</title>
+    </head>
+    <body>
+        <script>
+            //Declare all of the variables to collect the numbers and operation the user wants
+            let num1 = prompt("Enter the first number");
+            let num2 = prompt("Enter the second number");
+            let operation = prompt("Enter the operation (+, -, *, /)");
+
+            //parseFloat converts into string then returns to number
+            num1 = parseFloat(num1);
+            num2 = parseFloat(num2);
+
+            //Here the variable result is made and is used to store the answer of what the user has previously written
+            let result;
+            if (operation === "+"){
+                result = num1 + num2;
+            } else if (operation === "-"){
+                result = num1 - num2;
+            } else if (operation === "*"){
+                result = num1 * num2;
+            } else if (operation === "/"){
+                result = num1 / num2;
+            } else{
+                result = "Invalid operation";
+            }
+
+            //This result is then written in the inspector < Console
+            console.log(`The result is: ${result}`);
+        </script>
+    </body>
+</html>
