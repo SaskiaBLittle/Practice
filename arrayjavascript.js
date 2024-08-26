@@ -7,4 +7,6 @@ for (let i = 1; i < numbers.length; i++){
     }
 }
 const arr = document.getElementById("array");
-arr.innerText = `The maximum number is: ${maxNumber}`;
+arr.innerText = `The maximum number is: ${maxNumber}, from the array ${numbers}`;
+
+//Could make it so that the user can input there own numbers into the array
